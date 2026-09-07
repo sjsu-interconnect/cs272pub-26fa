@@ -1,0 +1,10 @@
+# Policy gradient lecture demo (REINFORCE on TrapGrid)
+#
+#   pip install -r requirements.txt
+#
+# Developed and tested on Python 3.11 with
+# gymnasium 1.2.1, numpy 2.3.4, matplotlib 3.10.7.
+
+gymnasium>=1.0          # custom Env, spaces, the 5-tuple step API
+numpy>=1.24             # arrays, np.dot, np.random.default_rng
+matplotlib>=3.7         # the learning curve in reinforce.py
