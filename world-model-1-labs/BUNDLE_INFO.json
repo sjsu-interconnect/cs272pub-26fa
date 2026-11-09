@@ -1,0 +1,11 @@
+{
+ "package": "world-model-1-labs",
+ "role": "Optional local build-from-source route; both labs are required",
+ "required_path": [
+  "notebooks/1_learn_world_model.ipynb",
+  "notebooks/2_imagine_and_plan.ipynb"
+ ],
+ "datasets_or_checkpoints_included": false,
+ "notebook_outputs": "cleared except the tagged Lab 1 overview/architecture and Lab 2 overview figures",
+ "build_guide": "docs/FROM_SOURCE.md"
+}

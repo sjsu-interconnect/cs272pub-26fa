@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lab1-world-model"
+version = "1.0.0"
+description = "Lab 1: From Model-Based RL to Modern World Models (educational world model on HighwayEnv)"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+license = { text = "MIT" }
+dependencies = [
+    "torch>=2.2",
+    "gymnasium>=0.29",
+    "highway-env>=1.10",
+    "numpy>=1.26",
+    "pyyaml>=6.0",
+    "tensorboard>=2.16",
+    "tqdm>=4.66",
+    "matplotlib>=3.8",
+    "scikit-learn>=1.4",
+    "jupyterlab>=4.2",
+    "ipykernel>=6.29",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.4",
+    "black>=24.0",
+    "pytest>=8.0",
+    "nbformat>=5.10",
+    "nbclient>=0.10",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP", "B"]
+ignore = ["B008"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,13 @@
+torch>=2.2
+gymnasium>=0.29
+highway-env>=1.10
+numpy>=1.26
+pyyaml>=6.0
+tensorboard>=2.16
+tqdm>=4.66
+matplotlib>=3.8
+scikit-learn>=1.4
+jupyterlab>=4.2
+ipykernel>=6.29
+nbformat>=5.10
+nbclient>=0.10

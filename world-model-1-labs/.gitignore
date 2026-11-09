@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Lab artifacts
+datasets/*.npz
+datasets/*.pt
+runs/
+checkpoints/
+outputs/
+*.ckpt
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
