@@ -14,7 +14,7 @@ venv/
 env/
 
 # Lab artifacts
-datasets/*.npz
+# datasets/*.npz
 datasets/*.pt
 runs/
 checkpoints/
