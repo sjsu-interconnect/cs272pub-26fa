@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="340" viewBox="0 0 1440 340" role="img" aria-labelledby="title desc">
+  <title id="title">Lab 3: acting in the real environment</title>
+  <desc id="desc">The observation goes to the Encoder and RSSM, then the Actor, a sampled action, and HighwayEnv. The next observation feeds back to the model.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#536477"/></marker>
+  </defs>
+  <rect width="1440" height="340" rx="14" fill="#ffffff"/>
+  <text x="35" y="46" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#17283b">Acting: observe → estimate → sample → execute</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#17283b">
+    <rect x="30" y="95" width="240" height="105" rx="12" fill="#edf4fa" stroke="#28649b" stroke-width="3"/>
+    <text x="150" y="133" font-size="23" font-weight="bold">Observation</text><text x="150" y="165" font-size="20">5×5 Kinematics</text>
+    <rect x="315" y="95" width="245" height="105" rx="12" fill="#f3effa" stroke="#7054a2" stroke-width="3"/>
+    <text x="437" y="133" font-size="23" font-weight="bold">Encoder + RSSM</text><text x="437" y="165" font-size="20">estimate current state</text>
+    <rect x="605" y="95" width="225" height="105" rx="12" fill="#fbf4e7" stroke="#95671e" stroke-width="3"/>
+    <text x="717" y="133" font-size="23" font-weight="bold">Actor</text><text x="717" y="165" font-size="20">five probabilities</text>
+    <rect x="875" y="95" width="225" height="105" rx="12" fill="#fcf0eb" stroke="#b05d3e" stroke-width="3"/>
+    <text x="987" y="133" font-size="23" font-weight="bold">Sample</text><text x="987" y="165" font-size="20">one action</text>
+    <rect x="1145" y="95" width="265" height="105" rx="12" fill="#edf4fa" stroke="#28649b" stroke-width="3"/>
+    <text x="1277" y="133" font-size="23" font-weight="bold">HighwayEnv</text><text x="1277" y="165" font-size="20">executes action</text>
+    <text x="715" y="270" font-size="21" font-weight="bold" fill="#536477">next observation</text>
+  </g>
+  <g fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M270 148 H310"/><path d="M560 148 H600"/><path d="M830 148 H870"/><path d="M1100 148 H1140"/>
+    <path d="M1278 202 V250 H150 V205"/>
+  </g>
+</svg>

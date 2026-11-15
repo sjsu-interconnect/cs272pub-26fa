@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="570" viewBox="0 0 1440 570" role="img" aria-labelledby="title desc">
+  <title id="title">Lab 4: learning from experience and imagination</title>
+  <desc id="desc">Real experience enters replay. The world model learns from replay, yielding posterior states for imagined trajectories, predicted rewards, continuation and critic values, return targets, and actor critic learning. Training and real acting repeat together.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#536477"/></marker></defs>
+  <rect width="1440" height="570" rx="14" fill="#ffffff"/>
+  <text x="35" y="46" font-family="Arial,sans-serif" font-size="30" font-weight="bold" fill="#17283b">Dreamer training: real experience and imagined experience</text>
+  <g font-family="Arial,sans-serif" text-anchor="middle" fill="#17283b">
+    <rect x="30" y="88" width="270" height="104" rx="12" fill="#edf4fa" stroke="#28649b" stroke-width="3"/>
+    <text x="165" y="126" font-size="23" font-weight="bold">Real HighwayEnv</text><text x="165" y="157" font-size="20">experience</text>
+    <rect x="355" y="88" width="220" height="104" rx="12" fill="#eef7f3" stroke="#22745e" stroke-width="3"/>
+    <text x="465" y="130" font-size="23" font-weight="bold">Replay buffer</text><text x="465" y="159" font-size="19">real transitions</text>
+    <rect x="630" y="88" width="355" height="104" rx="12" fill="#f3effa" stroke="#7054a2" stroke-width="3"/>
+    <text x="807" y="126" font-size="23" font-weight="bold">World Model learning</text><text x="807" y="157" font-size="19">Encoder · RSSM · prediction heads</text>
+    <rect x="1040" y="88" width="355" height="104" rx="12" fill="#f3effa" stroke="#7054a2" stroke-width="3"/>
+    <text x="1217" y="126" font-size="23" font-weight="bold">Posterior starting states</text><text x="1217" y="157" font-size="19">inferred from real sequences</text>
+    <rect x="1040" y="262" width="355" height="104" rx="12" fill="#fbf4e7" stroke="#95671e" stroke-width="3"/>
+    <text x="1217" y="300" font-size="23" font-weight="bold">Imagined trajectories</text><text x="1217" y="331" font-size="19">Actor + learned World Model</text>
+    <rect x="630" y="262" width="355" height="104" rx="12" fill="#faeff4" stroke="#a04770" stroke-width="3"/>
+    <text x="807" y="300" font-size="22" font-weight="bold">Predicted reward / continuation</text><text x="807" y="331" font-size="20">+ Critic values</text>
+    <rect x="355" y="262" width="220" height="104" rx="12" fill="#faeff4" stroke="#a04770" stroke-width="3"/>
+    <text x="465" y="305" font-size="23" font-weight="bold">Return targets</text><text x="465" y="334" font-size="19">imagined returns</text>
+    <rect x="30" y="262" width="270" height="104" rx="12" fill="#fbf4e7" stroke="#95671e" stroke-width="3"/>
+    <text x="165" y="300" font-size="23" font-weight="bold">Actor + Critic</text><text x="165" y="331" font-size="20">learning</text>
+    <text x="710" y="465" font-size="22" font-weight="bold" fill="#536477">repeat: updated Actor acts in HighwayEnv; World Model and behavior keep learning</text>
+    <text x="720" y="530" font-size="24" font-weight="bold" fill="#22745e">Learn the world from real experience. Learn the policy from imagined experience.</text>
+  </g>
+  <g fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)">
+    <path d="M300 140 H350"/><path d="M575 140 H625"/><path d="M985 140 H1035"/>
+    <path d="M1217 192 V257"/><path d="M1040 314 H990"/><path d="M630 314 H580"/><path d="M355 314 H305"/>
+    <path d="M165 367 V418 H12 V140 H25"/>
+  </g>
+</svg>

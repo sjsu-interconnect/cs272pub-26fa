@@ -1,0 +1,88 @@
+{
+  "description": "Previously verified example, not results from your run",
+  "training_seed": 17,
+  "training_steps": 24996,
+  "optimizer_updates": 999,
+  "evaluation_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019
+  ],
+  "conditions": {
+    "A": {
+      "episode_count": 20,
+      "collision_count": 6,
+      "metrics": {
+        "mean_speed_mps": {
+          "mean": 20.800921933010947,
+          "sample_std": 1.1416686048562583
+        },
+        "displacement_m": {
+          "mean": 538.5076454438489,
+          "sample_std": 155.95636107528387
+        },
+        "duration_s": {
+          "mean": 26.149999999999938,
+          "sample_std": 7.686454250652121
+        },
+        "lane_changes": {
+          "mean": 2.95,
+          "sample_std": 1.8771478925557026
+        }
+      },
+      "action_counts": {
+        "LANE_LEFT": 35,
+        "IDLE": 130,
+        "LANE_RIGHT": 57,
+        "FASTER": 25,
+        "SLOWER": 276
+      }
+    },
+    "C": {
+      "episode_count": 20,
+      "collision_count": 20,
+      "metrics": {
+        "mean_speed_mps": {
+          "mean": 26.83806497721967,
+          "sample_std": 1.871465710150241
+        },
+        "displacement_m": {
+          "mean": 221.65388381077454,
+          "sample_std": 150.64666437450074
+        },
+        "duration_s": {
+          "mean": 8.349999999999994,
+          "sample_std": 5.5466917593899225
+        },
+        "lane_changes": {
+          "mean": 2.5,
+          "sample_std": 2.064741604835056
+        }
+      },
+      "action_counts": {
+        "LANE_LEFT": 39,
+        "IDLE": 20,
+        "LANE_RIGHT": 33,
+        "FASTER": 54,
+        "SLOWER": 21
+      }
+    }
+  }
+}
